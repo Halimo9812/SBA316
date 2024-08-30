@@ -1,65 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  font-size: 26pt;
+}
 
+body {
+  background: #a8ac9a69;
   
-  /* CSS Custom Properties */
-  :root {
-    --main-bg: #3cb395;
-    background-image: url(https://images.pexels.com/photos/688885/pexels-photo-688885.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
-    
-  }
-  --top-menu-bg: #0e9aa7;
-  --sub-menu-bg: #3da4ab;
+  background-image: radial-gradient(#529725 7.2%, transparent 0);
+  min-height: 70vh;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(0, 217, 255);
+  text-align: center;
+}
 
+.container {
+  padding: 2rem 5rem 4rem 5rem;
+  background-color: #3a3a3f;
+  background-size: 25px 25px;
+  border-radius: 20px;
+}
+#p1btn{
+  background-color: #84277c;
   
-  body {
-    font-family: Tahoma, Geneva, sans-serif;
-    height: 100vh;
-    margin: 0;
-    display: grid;
-    grid-template-rows: 3rem auto;
-    color: white;
-    background-image: url(https://images.pexels.com/photos/688885/pexels-photo-688885.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
+}
+
+.heading {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.form-label {
+  display: block;
+  margin-bottom: 1rem;
+  font-style: italic;
+  font: size 26pt;
+  font-weight: 600;
+}
+
+.form-input {
+  background-color: #598aaf;
+  padding: 0.5rem;
+  font-size: 1rem;
+  /* color: rgba(63, 62, 65, 0.7); */
+  color:black;
+  width: 70%;
+  margin-bottom: 20px;
+}
+
+button {
+  padding: 0.5rem;
+  border: none;
+  text-decoration: none;
+  border-radius: 1px;
+  box-shadow: 0 2px 0;
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  background-color: #a8c023;
+  font-weight: bold;
+}
+:hover{
+  color:white;
+}
+
+#reset{
+background-color: darkslategray;
+}
+  .winner{
+    color: green;
   }
   
-  .flex-ctr {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  .loser{
+    color: red;
   }
-  
-  .flex-around {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-  }
-  
-  nav a {
-    line-height: 3rem;
-    padding: 0 1rem;
-    text-transform: uppercase;
-    text-decoration: none;
-    color: white;
-  }
-  
-  #top-menu a:hover {
-    background-color: var(--sub-menu-bg);
-  }
-  
-  header, #top-menu {
-    position: relative;
-  }
-  
-  #top-menu {
-    z-index: 20;
-  }
-  #sub-menu {
-    width: 100%;
-    z-index: 10;
-    transition: top 0.5s ease-out;
-  }
-  #sub-menu a:hover {
-    background-color: var(--top-menu-bg);
-  }
-  nav a.active {
-    background-color: var(--sub-menu-bg);
-    color: var(--main-bg);
-  }
+ p{
+  font-weight: italic;
+  font-family: sans-serif;
+ }

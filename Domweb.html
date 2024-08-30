@@ -1,25 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My DOM Website</title>
-    <script src="./DOMweb.js" defer></script>
-    <link rel="stylesheet" href="./DOMweb.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Score Keeper</title>
+  <script type="module" src="./DOMweb.js" defer></script>
+  <link rel="stylesheet" href="./DOMweb.css">
+  
 </head>
 <body>
 
-  <nav id="top-menu"></nav>
-    <nav id="sub-menu"></nav>
+  <div class="container">
 
+    <div class="heading">
+        <h1> Score Keeper</h1>
+        
+    </div>
+    <div>
+      <p>Use the button below to keep score</p>
+    </div>
+
+    <div id="form">
+      <h2> <h1> <span id = "player1">0</span> to <span id ="player2"> 0</span></h2>
+        <div>
+  
     
-  <header>
-    <nav id="top-menu"></nav>
-    <nav id="sub-menu"></nav>
-
- </Header>
- <main></main>
+    <select name="Wining Score" id="playUpTo">
+      
+      <option value="3">3</option>
+      <option value="6">6</option>
+      <option value="9">9</option>
+      <option value="12">12</option>
+      <option value="15">15</option>
+      <option value="18">18</option>
+      <option value="21">21</option>
+      <option value="24">24</option>
+      <option value="27">27</option>
+      <option value="30">30</option>
+    </select>
+    <div> <p>Playing to</p>
+    <button id="p1btn"> +1 Player One</button>
+    <button id="p2btn"> +1 Player two</button>
+    <button id="reset">Reset</button>
+  </h1>
+</div>
 </body>
-
-
 </html>
